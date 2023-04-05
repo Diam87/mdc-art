@@ -17,10 +17,10 @@ const Mailer = (props) => {
         e.preventDefault();
         
         emailjs.sendForm(
-            process.env.REACT_APP_MAILER_SERVICE_KEY,
-            process.env.REACT_APP_MAILER_TEMPLATE_KEY,
+            "service_ttjyxd5",
+            "template_frdiq3r",
             e.target,
-            process.env.REACT_APP_MAILER_USER_ID
+            "user_SD19s5kQYpgzJGpMVcpuU"
         )
         .then((e) => {
             console.log("Success", e)
@@ -63,7 +63,7 @@ const Mailer = (props) => {
                         </div>
                         <div className="form-group text-center">
                             <ReCAPTCHA
-                                sitekey={process.env.REACT_APP_RECAPTCHA_ID}
+                                sitekey="6LfkgzclAAAAAJMgVCBEeaE8YgtQPkvYw9TarpMJ"
                                 onChange={onChange}
                                 className="g-recaptcha"
                             />
